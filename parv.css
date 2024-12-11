@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: gray;
+}
+h1,p{
+    padding: 1rem;
+    color: aliceblue;
+}
+.images{
+    padding: 1rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.2rem;
+   
+}
+.images div{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 500px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+button{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    &:hover{
+        background: violet;
+    }
+}
+#go{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: white;
+    }
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: xx-large;
+    &:hover{
+        color: violet;
+        scale: 2;
+    }
+}
